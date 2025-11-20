@@ -51,3 +51,60 @@ body {
 }
 
 /* Создайте стили для модального окна согласно требованиям */
+
+.modal {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Полупрозрачная подложка */
+
+.modal-backdrop {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+}
+
+/* Содержимое модального окна */
+.modal-content {
+
+  position: relative;
+  z-index: 2;
+  background: #516d7af4;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 500px;
+  box-shadow: 0px 0px 20px 11px rgb(97, 137, 164);
+  text-align: center;
+  color: #191d1a;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 2.5;
+
+}
+
+/* Заголовок внутри модалки */
+
+.modal-content h2 {
+
+  font-size: 22px;
+  color: #b7b1b1;
+
+
+
+}
